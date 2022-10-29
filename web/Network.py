@@ -8,7 +8,8 @@ def map():
     net.add_node(1, label = "Node 1")
     net.add_node(2)
     net.add_edge(1,2)
+    net.toggle_drag_nodes("False")
+    net.toggle_physics("False")
     net.show("nodes.html") #creates a new file from "nodes.html"
-    #display(HTML("nodes.html"))
 
 map()

@@ -3,6 +3,16 @@
 {% block content %}
 <h1>CAN Bus Manager</h1>
 
+<form action="/action_page.php">
+  <label for="NodeName">Node Name:</label><br>
+  <input type="text" id="NodeName" name="NodeName" placeholder="Enter Node Name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<input type="submit" value="Create">
+
+{% include 'nodes.html' %}
+
 
 <script src="{{url_for('static', filename='main.js')}}"></script>
 
